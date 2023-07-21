@@ -3,7 +3,7 @@ version: '3.1'
 services:
   hibiscus-server:
     build:
-      context: hibiscus-server-docker
+      context: hibiscus-server
       dockerfile: Dockerfile
     ports:
       - "8080:8080"
