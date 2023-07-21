@@ -1,0 +1,10 @@
+version: '3.1'
+
+services:
+  hibiscus-server:
+    build:
+      context: hibiscus-server-docker
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    command: /hibiscus-server/jameicaserver.sh -p password -f /srv/hibiscus
